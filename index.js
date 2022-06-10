@@ -5,6 +5,7 @@
 	 「 TqTo 」
 	@ My God
 	@ My Parents
+        @ KokoRey
 	@ Fatih A.
 	@ Ferdi
 	@ DikaArdnt [author]
@@ -804,16 +805,16 @@ if (!m.isGroup) return reply(lang.groupOnly())
             case 'ping': case 'tes': case 'runtime':
             reply(`Runtime : ${runtime(process.uptime())}`)
             break
-            case 'public': {
+            case 'umum': {
                 if (!m.key.fromMe && !isCreator) return reply(lang.ownerOnly())
                 alpha.public = true
-                reply('Sukses Ganti Ke Mode Public')
+                reply('Sukses Ganti Ke Mode Umum')
             }
             break
-            case 'self': {
+            case 'pribadi': {
                 if (!m.key.fromMe && !isCreator) return reply(lang.ownerOnly())
                 alpha.public = false
-                reply('Sukses Ganti Ke Mode Self\n\nUntuk mengubah ke mode public silahkan gunakan nomor bot')
+                reply('Sukses Ganti Ke Mode Pribadi\n\nUntuk mengubah ke mode public silahkan gunakan nomor bot')
             }
             break
             case 'owner': case 'creator': {
@@ -1210,22 +1211,22 @@ break
                 await alpha.groupAcceptInvite(result).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
             }
             break
-            case 'tagall': case 'infoall':
+            case 't': case 'infoall':
                 if (!m.isGroup) return reply(lang.groupOnly())
                 if (!(isGroupAdmins || isGroupOwner )) return reply(lang.adminOnly())
-                let tekss = `══✪〘 *👥 Mention All* 〙✪══\n\n➲ *Message : ${q ? q : 'Nothing'}*\n\n`
+                let tekss = `══✪〘 *👥 By KoKoRey* 〙✪══\n\n➲ *Message : ${q ? q : 'Nothing'}*\n\n`
 		      	for (let mem of participants) {
 		            tekss += `🏅 @${mem.id.split('@')[0]}\n`
 				}
                 tekss += `\n⋙ *${botname}* ⋘`
                 alpha.sendMessage(from, { text: tekss, mentions: participants.map(a => a.id) }, { quoted: fkontak })
             break
-            case 'hidetag':
+            case 'h':
                 if (!m.isGroup) return reply(lang.groupOnly())
                 if (!(isGroupAdmins || isGroupOwner )) return reply(lang.adminOnly())
                 alpha.sendMessage(from, { text : q ? q : '' , mentions: participants.map(a => a.id)}, {quoted: fkontak})
             break
-            case 'kick': {
+            case 'tendang': {
 				if (!m.isGroup) return reply(lang.groupOnly())
                 if (!isBotAdmins) return reply(lang.botNotAdmin())
                 if (!(isGroupAdmins || isGroupOwner )) return reply(lang.adminOnly())
@@ -1234,7 +1235,7 @@ break
 				await alpha.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 				}
 				break
-			case 'add': {
+			case 'tambah': {
 				if (!m.isGroup) return reply(lang.groupOnly())
                 if (!isBotAdmins) return reply(lang.botNotAdmin())
                 if (!(isGroupAdmins || isGroupOwner )) return reply(lang.adminOnly())
@@ -1243,7 +1244,7 @@ break
 				await alpha.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 				}
 				break
-			case 'promote': {
+			case 'admin': {
 				if (!m.isGroup) return reply(lang.groupOnly())
                 if (!isBotAdmins) return reply(lang.botNotAdmin())
                 if (!(isGroupAdmins || isGroupOwner )) return reply(lang.adminOnly())	
@@ -1252,7 +1253,7 @@ break
 				await alpha.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 				}
 				break
-			case 'demote': {
+			case 'babu': {
 				if (!m.isGroup) return reply(lang.groupOnly())
                 if (!isBotAdmins) return reply(lang.botNotAdmin())
                 if (!(isGroupAdmins || isGroupOwner )) return reply(lang.adminOnly())

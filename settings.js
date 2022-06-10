@@ -20,7 +20,7 @@ global.autoread = false // auto read pesan / message
 // Other
 global.botname = "KokoRey-Mdོ" //namabot kalian
 global.ownername= "ᴹᴿ᭄ ItsmeRey ×፝֟͜×" //nama kalian
-global.myweb ="https://api.zeeoneofc.xyz" //bebas asal jan hapus
+global.myweb ="https://instagram.com/callme_rey1921" //bebas asal jan hapus
 global.youtube = "https://instagram.com/callme_rey1921" //bebas asal jan hapus
 global.github = "https://instagram.com/callme_rey1921" //bebas
 global.email = "kokobot08@gmail.com" //bebas

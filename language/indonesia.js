@@ -5,7 +5,7 @@ exports.wait = () => {
     return `⏳ Mohon tunggu sebentar~`
 }
 exports.ok = () => {
-    return `✅ Done. Ok desu~`
+    return `✅ _NIH ANJENG UDAH, LAIN KALI GAUSAH MANJA NGNTD_`
 }
 
 exports.err = () => {
@@ -46,7 +46,7 @@ exports.groupOnly = () => {
 }
 
 exports.adminOnly = () => {
-    return `🙅  Command ini hanya bisa digunakan oleh admin grup!`
+    return `🙅  _Cuma bisa di gunakan oleh admin yang tamvan dan camtik_!`
 }
 
 exports.nhFalse = () => {
@@ -68,7 +68,7 @@ exports.adminAlready = () => {
 }
 
 exports.botNotAdmin = () => {
-    return `Jadikan bot sebagai admin terlebih dahulu! 🙏`
+    return `GUA BUKAN ADMIN BANGSAT🗿`
 }
 
 exports.received = (pushname) => {
@@ -85,14 +85,14 @@ exports.notNum = (q) => {
     return `"${q}", bukan angka!`
 }
 exports.menunya = (salam, pushname, botname) =>{
-	return`Hai kak ${pushname} 👋 selamat ${salam} , 
+	return`Hai Anjeng ${pushname} 👋 selamat ${salam} , 
 saya ${botname}, bot ini adalah Beta Multi-Device Whatsapp.
 `
 }
 exports.listMenu = (time, salam, pushname, prefix) => {
     return `*Selamat ${salam} ${pushname}*
 *⌚Time Server : ${time}*
-*📚 List-Menu Alphabot-Md :*
+*📚 List-Menu KoKoRey-Md :*
 
 ╭─❒ 「 Bot Info 」 
 ├ ${prefix}owner
@@ -849,7 +849,7 @@ Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu 
 `
 }
 exports.welcome = () =>{
-	return`𝖩𝖺𝗇𝗀𝖺𝗇 𝗅𝗎𝗉𝖺 𝗂𝗇𝗍𝗋𝗈 𝗄𝖺𝗄 🤗
+	return' Hadehh beban gc nya nambah, intro ya anjeng
 	
 ╭ 𝖭𝖺𝗆𝖺 :
 ├ 𝖴𝗆𝗎𝗋 :
@@ -858,7 +858,7 @@ exports.welcome = () =>{
 ╰❒ 𝖯𝖺𝗍𝗎𝗁𝗂 𝗋𝗎𝗅𝖾𝗌 𝗀𝗋𝗎𝗉 𝗒𝖺 𝗄𝖺k ~`
 }
 exports.leave = () =>{
-	return`Yah kok out 😣 Mental aman kan kak >.<
+	return`Bagus lah mending lu pergi, awas ke tabrak fuso ya tod ^-^
 Goodbye`
 }
 exports.source = () =>{

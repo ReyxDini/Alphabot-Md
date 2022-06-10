@@ -42,10 +42,10 @@ global.flasmurf = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutp
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
-    sukses: 'Done Ya Anjeng~',
-    admin: 'CUMA BISA DI GUNAKAN OLEH ADMIN YANG TAMVAN DAN GAMTENG🗿 !',
-    botAdmin: 'GUA BUKAN *Admin* ANJENG!',
-    owner: 'Perintah Ini Hanya Bisa Digunakan Oleh MAJIKAN !',
+    sukses: 'Udah ya anjeng, lain kali gausah manja ngntd',
+    admin: '_Cuma bisa di gunakan oleh admin yang tamvan dan camtik_🗿 !',
+    botAdmin: 'Gua bukan *admin* anjeng!',
+    owner: 'Perintah Ini Hanya Bisa Digunakan Oleh majikan !',
     group: 'Perintah Ini Hanya Bisa Digunakan Di Group !',
     private: 'Perintah Ini Hanya Bisa Digunakan Di Private !',
 	bot: 'Fitur Khusus Pengguna Nomor Bot',

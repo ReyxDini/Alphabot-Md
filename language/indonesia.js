@@ -799,7 +799,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╭─❒ 「 TqTo 」 
 ├ My God
 ├ My Parents
-├ Fatih A.
+├ Fatih A. & ®.KokoRey
 ├ Ferdi
 ├ DikaArdnt
 ├ Mhankbarbar
@@ -849,7 +849,7 @@ Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu 
 `
 }
 exports.welcome = () =>{
-	return' Hadehh beban gc nya nambah, intro ya anjeng
+	return`Hadehh beban gc nya nambah, intro ya anjeng
 	
 ╭ 𝖭𝖺𝗆𝖺 :
 ├ 𝖴𝗆𝗎𝗋 :

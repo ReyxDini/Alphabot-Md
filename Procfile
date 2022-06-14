@@ -1,1 +1,1 @@
-worker: npm start
+worker: npm start && node zeeone.js
